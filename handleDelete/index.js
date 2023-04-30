@@ -25,7 +25,7 @@ module.exports = async(event) => {
   
   const response = {
     status: status,
-    body: JSON.stringify(body);
-  }
+    body: JSON.stringify(body),
+  };
   return response;
 };

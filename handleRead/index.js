@@ -20,7 +20,7 @@ module.exports = async(event) => {
   
   const response = {
     status: 200,
-    body: JSON.stringify(body);
-  }
+    body: JSON.stringify(body),
+  };
   return response;
 };
