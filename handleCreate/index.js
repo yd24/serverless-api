@@ -10,7 +10,7 @@ const personSchema = new dynamoose.Schema({
 const personModel = dynamoose.model('People', personSchema);
 
 module.exports = async(event) => {
-  let body = event.body;
+  let body = JSON.parse(event.body);
   
   const response = {
     status: 200,
